@@ -37,9 +37,8 @@ selectCharacterClassArcher = () => {
   startFight.hidden = false;
   goToTown.hidden = false;
 };
-
-let playerLvlUp = () => {
 let nextlvl = 100;
+let playerLvlUp = () => {
 if (player.exp >= nextlvl) {
   player.lvl+=Math.floor(player.exp/nextlvl);// if xp is 1000, two levels up
   player.exp=player.exp%100
